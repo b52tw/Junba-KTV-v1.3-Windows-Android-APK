@@ -1,0 +1,5 @@
+1. 建立新的 GitHub Repository 或把此包內容覆蓋到測試 Repo。
+2. 確認 workflow 位於 .github/workflows/build-windows-android-v1.3.yml
+3. Commit / Push 到 main。
+4. Actions 成功後到最下方 Artifacts 下載 Windows Single EXE 或 Android APK。
+5. v1.3 不需要 Gemini API Key，也不需要任何雲端設定。

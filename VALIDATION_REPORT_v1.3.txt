@@ -1,0 +1,17 @@
+峻爸 KTV 多文字軌核對器 v1.3｜驗證報告
+
+版本定位：純離線穩定版（Windows Single EXE + Android APK）
+
+已完成的本地驗證：
+1. Windows Python compileall：通過。
+2. Windows pytest：14 passed。
+3. 新增時間重疊合併比對測試：通過。
+4. spk:0 / speaker / 講者前綴正規化測試：通過。
+5. Android Models + Review + TrackParser 使用 Kotlin compiler + API stubs 編譯：通過。
+6. Android MainActivity + 全部 Kotlin 原始碼使用 Kotlin compiler + Android API stubs 編譯：通過。
+7. GitHub Actions YAML 解析：通過。
+8. AndroidManifest 已移除 INTERNET 權限。
+9. Android / Windows 原始碼已移除 Gemini API 呼叫與 API Key UI。
+
+注意：真正 APK 仍需由 GitHub Actions 的 Android SDK/Gradle runner 完整 assemble；
+本地 stub 編譯用來在上傳前先抓 Kotlin 語法/型別問題，降低再出現 compileDebugKotlin 錯誤的機率。
